@@ -1,0 +1,160 @@
+html, body {
+	background: #00A800; /* Little Mac's green */
+	margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+    width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+	background: white;
+    line-height: 2.0;
+}
+
+header {
+    padding-top: 2.5%;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive; /* free Google font */
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: none;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: none;
+    font-size: 14px;
+}
+
+main {
+    padding: 2.5% 2.5% 0;  /* top, left/right, bottom */
+}
+
+footer {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin-top: 40px; /* space between the last paragraph and the footer */
+    padding: 20px 0;  /* space between the footer's edges and the button inside it */
+}
+
+details summary{
+    font-family: 'Press Start 2P', cursive; /* free Google font */
+    font-size: 12px;
+}
+
+.back-to-top {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    padding: 12px 20px;
+    border: 5px solid #000;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+.horizontal-list {
+    display: flex; /* aligns items horizontally in a row */
+    list-style-type: none;
+    font-family: 'Press Start 2P', cursive;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    justify-content: center; /* centers the links horizontally within the nav */
+    background-color: #333; /* gives the bar its own dark background */
+  }
+  
+  .horizontal-list a {
+    display: block; /* lets padding apply on all sides, not just left/right */
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px; /* makes each link feel like a button/bar segment */
+}
+
+.horizontal-list a:hover {
+    background-color: #555; /* subtle highlight on hover */
+}
+
+.flowRight {
+    float: right;
+    margin: 0 0 15px 15px; /* space below and to the left, so text doesn't touch the image */
+}
+
+.media-row {
+    display: flex;
+    align-items: center; /* vertically centers the image and paragraph against each other */
+    gap: 20px;
+    margin-bottom: 2.5%; /* same amount as main's left/right padding, for consistent spacing */
+}
+
+.media-img {
+    flex-shrink: 0; /* stops the image from getting squeezed as the text grows */
+}
+
+.icon-slot {
+    flex-shrink: 0;
+    width: 70px;          /* reserves the same horizontal space every time */
+    display: flex;
+    justify-content: center; /* centers whatever size icon sits inside it */
+}
+
+.character-slot {
+    flex-shrink: 0;
+    width: 150px;          /* reserves the same horizontal space every time */
+    display: flex;
+    justify-content: center; /* centers whatever size icon sits inside it */
+}
+
+.character-sizing {
+    width: 150px; 
+    height: auto;  /* keeps the image's proportions, nothing cropped or stretched */
+}
+
+.controller-sizing {
+    width: 300px;  /* adjusting width */
+    height: auto;  /* keeps the image's proportions */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery figure {
+    margin: 0;
+    text-align: center;
+    border: 3px solid #333;
+    padding: 6px;
+    background-color: white;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.15s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+.gallery figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+}

@@ -1,0 +1,141 @@
+<!--unique elements a tag found:-->
+<!--<menu>--index.html line 21-->
+<!--<details>--characters.html line 97-->
+<!--<picture>--characters.html line 31-->
+<!--open attribute characters.html line 97-->
+<!--draggable attribute gallery.html line 27-->
+<!--fetchpriority attribute index.html line 39-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Favorite NES Game!</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header role="banner">
+            <h1>Mike Tyson&rsquo;s Punch-Out!!</h1>
+            <nav role="navigation">
+                <!-- <menu> is used here instead of <ul> since this list represents a group of navigational commands, which is what <menu> is semantically intended for (list of commands and interactive controls)-->
+                <menu class="horizontal-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="trivia.html">Trivia</a></li>
+                </menu>
+            </nav>
+        </header>
+        <main role="main">
+            <article role="article">
+                <header>
+
+                    <h2>Overview</h2>
+                        <!-- fetchpriority="high" tells the browser to prioritize downloading this image over others on the page, since it's the first image visitors see -->
+                        <img
+                        src="images/Mike_Tyson's_Punch-Out!!_NES_Box.jpeg"
+                        alt="Mike Tyson's Punch-Out!! NES Box"
+                        class="flowRight"
+                        fetchpriority="high"/>
+                        <p>
+                            Mike Tyson&apos;s Punch-Out!! is a sports boxing fighting video game for the Nintendo Entertainment System (NES) developed and published by Nintendo in 1987.
+                        </p>
+
+                        <h3>History</h3>
+
+                            <p>
+                                Part of the Punch-Out!! series, the game was originally released in arcades as Punch-Out!! (1984) and later as Super Punch-Out!! (1985). The NES version was released in North America on October 18, 1987, and in Europe on December 15, 1987. Nintendo released the Mike Tyson version of Punch-Out!! in Japan soon after its North American release.
+                            </p>
+
+                            <p>
+                                Nintendo of America&apos;s founder and former president, Minoru Arakawa, attended a boxing match during the Heavyweight Unification Series (also known as the Heavyweight World Series) that featured Mike Tyson. Arakawa was so amazed with Tyson&apos;s <em>"power and skill"</em> that he decided to sign a licensing agreement with Tyson to use his name and likeness in the game. This was a risk for Nintendo since this transaction occurred before Mike Tyson won the World Boxing Council (WBC) heavyweight title. However, he ended up becoming the youngest heavyweight champion in history. These results ended up being beneficial for Nintendo, as Tyson&apos;s popularity skyrocketed after he won the title, and the game became a commercial success.
+                                </p>
+                </header>
+                <section>
+                    <h2>Gameplay</h2>
+                        <img
+                        src="images/NES-gameplay.gif"
+                        alt="In-game gif of a fight!"
+                        class="flowRight"/>
+                        <p>
+                            In the game, the player controls <b>Little Mac</b>, a young and small underdog boxer from the Bronx, New York, as he fights his way up the ranks of the World Video Boxing Association (WVBA) to become the champion. The player must defeat a series of opponents, each with their own unique fighting style and patterns, in order to progress through the game. The ultimate goal is to defeat the reigning champion, Mike Tyson, in a final match.
+                        </p>
+
+                        <h3>Moves</h3>
+
+                            <p>
+                                Little Mac has a limited moveset compared to most of the opponents. He can throw left and right jabs, left and right body blows, and an uppercut. The uppercut can only be used once the player earns a <i>Star</i> which is done by counter-punching the opponent directly before or after certain attacks. Mac can have up to 3 stars at a time, but they are lost whenever he is hit or knocked down. To defend, Mac can dodge to the left or right, duck, and block punches by putting up his guard. <a href="#controls" title="NES Controls">Go to NES Controls.</a>
+                            </p>
+
+                        <h3>Health Bar</h3>
+
+                            <p>
+                                Both Little Mac and his opponents have a <i>Health Bar</i> at the top of the screen that depletes when taking hits. When the health bar drops completely to zero, that fighter gets knocked down.
+                            </p>
+
+                        <h3>Heart Counter</h3>
+
+                            <p>
+                                Little Mac also has a <i>Heart Counter</i> that decreases by 3 points when hit by the opponent and decreased by 1 point when blocking an attack or the opponent dodges/blocks Mac&apos;s attack. When the heart count reaches 0, Little Mac temporarily turn different shades of pink and appear exhausted. He is not able to attack, but can still dodge, duck, and block. Mac can regain his hearts and normal color palette only by avoiding the opponent's punches. Also, his heart meter immediately drops to 0 when he is knocked down, but can regain some back by getting up.
+                            </p>
+
+                        <h3>How to Win</h3>
+
+                            <p>
+                                A bout can end by a <b>knockout</b> (KO), if a fighter is knocked down and can&apos;t get up before the referee counts to 10&semi; by a <b>technical knockout</b> (TKO), if a fighter is knocked down three times in one round&semi; or by <b>decision</b> if the bout lasts 3 full rounds without a clear winner. In order to win by decision, the player must accumulate a certain amount of points that are obtained by punching the opponent However, there are some bouts that can&apos;t be won by decision and will automatcially lose if the opponent is not knocked out. Little Mac can only get up 3 time total in any given bout, but if he is knocked down a 4th time, he will not be able to get up and thus lose by knockout.
+                            </p>
+                </section>
+                <section id="controls">
+                    <h2>NES Controls</h2>
+                    <img src="images/NES_Controller.png" alt="NES Controller" class="media-img controller-sizing"/>
+                    <div class="media-row">
+                        <div class="icon-slot">
+                            <img src="images/Nintendo-Dpad-Neutral.png" alt="D-Pad" class="media-img"/>
+                        </div>
+                        <p>
+                            The <b>D&ndash;Pad</b> is used to control Little Mac&apos;s movement. Press &larr; on the D&ndash;Pad to dodge left, &rarr; to dodge right. Tap &larr; when dodging right, or &rarr; when dodging left to quickly return to the center. Hold &darr; on the D&ndash;Pad to block punches. Tap twice quickly &darr;&darr; on the D&ndash;Pad to duck underneath a punch.
+                        </p>
+                    </div>
+                
+                    <div class="media-row">
+                        <div class="icon-slot">
+                            <img src="images/Nintendo-Button-A.png" alt="A-Button" class="media-img"/>
+                        </div>
+                        <p>
+                            The <b>A Button</b> is used for right hand punches. Tap the A Button without touching the D&ndash;Pad to throw a right hand to the body. Tap the A Button while holding &uarr; on the D&ndash;Pad for a right jab.
+                        </p>
+                    </div>
+                
+                    <div class="media-row">
+                        <div class="icon-slot">
+                            <img src="images/Nintendo-Button-B.png" alt="B-Button" class="media-img"/>
+                        </div>
+                        <p>
+                            The <b>B Button</b> is used for left hand punches. Tap the B Button without touching the D&ndash;Pad to throw a left hand to the body. Tap the B Button while holding &uarr; on the D&ndash;Pad for a left jab.
+                        </p>
+                    </div>
+                
+                    <div class="media-row">
+                        <div class="icon-slot">
+                            <img src="images/Nintendo-Button-Select.png" alt="Select Button" class="media-img"/>
+                        </div>
+                        <p>
+                            In between rounds, press the <b>Select Button</b> to instruct your coach, <b>Doc Louis </b> will help Mac and restore a bit of his health/stamina. This can only be performed once per match.
+                        </p>
+                    </div>
+                
+                    <div class="media-row">
+                        <div class="icon-slot">
+                            <img src="images/Nintendo-Button-Start.png" alt="Start Button" class="media-img"/>
+                        </div>
+                        <p>
+                            Pressing the <b>Start Button</b> exchanges 1 star for an uppercut attack. If there are no stars, this move will not work.
+                        </p>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer role="contentinfo">
+            <a href="index.html" title="Homepage Top" class="back-to-top">Back to Top </a>
+        </footer>
+    </body>
